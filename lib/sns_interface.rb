@@ -2,9 +2,7 @@ $:.unshift(File.dirname(__FILE__)) unless
   $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
 
 require 'rubygems'
-$:.unshift(File.dirname(__FILE__))
-require 'vendor/right_aws-2.0.0/lib/right_aws.rb'
-require 'vendor/right_aws-2.0.0/lib/awsbase/right_awsbase.rb'
+require 'right_aws'
 
 module SnsInterface
   VERSION = '0.0.1'
