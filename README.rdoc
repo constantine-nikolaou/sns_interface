@@ -1,26 +1,6 @@
 = sns_interface
 
-* http://github.com/#{github_username}/#{project_name}
-
-== DESCRIPTION:
-
-FIX (describe your package)
-
-== FEATURES/PROBLEMS:
-
-* FIX (list of features or problems)
-
-== SYNOPSIS:
-
-  FIX (code sample of usage)
-
-== REQUIREMENTS:
-
-* FIX (list of requirements)
-
-== INSTALL:
-
-* FIX (sudo gem install, anything else)
+* http://github.com/cnicolaou/sns_interface
 
 == LICENSE:
 
