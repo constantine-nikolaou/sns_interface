@@ -1,8 +1,8 @@
 $:.unshift(File.dirname(__FILE__)) unless
   $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
 
-require 'rubygems'
-require 'right_aws'
+require "rubygems"
+require "bundler/setup"
 
 module SnsInterface
   VERSION = '0.0.1'
@@ -76,7 +76,7 @@ module RightAws
       req_hash = generate_request('ConfirmSubscription', 'TopicArn' => topic_arn,
                                   'Token' => token, 
                                   'AuthenticateOnUnsubscribe' => auth_on_unsubscribe.to_s)
-      request_info(req_hash, SnsSubscribeParser.new(:logger => @logger))                            
+      request_info(req_hash, SnsSubscribeParser.new(:logger => @logger))
     rescue
       on_exception
     end
